@@ -1,0 +1,19 @@
+version: "3.7"
+services:  
+  web:
+    build:
+      context: './Docker/php/'
+    tty: true
+    volumes:
+      - ./www:/var/www/html/
+      - ./Docker/Vhosts:/etc/apache2/sites-enabled
+    container_name: apache
+    ports:
+      - "8080:80"
+    networks:
+      - internal
+    #command: tail -f /dev/null
+networks:
+  internal:
+    driver: bridge
+
