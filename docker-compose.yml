@@ -12,7 +12,6 @@ services:
       - "8080:80"
     networks:
       - internal
-    #command: tail -f /dev/null
 networks:
   internal:
     driver: bridge
