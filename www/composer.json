@@ -15,7 +15,7 @@
         "symfony/runtime": "7.1.*",
         "symfony/yaml": "7.1.*"
     },
-    "require-dev": {
+    "require-dev" : {
         "symfony/maker-bundle": "*"
     },
     "config": {
